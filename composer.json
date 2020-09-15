@@ -6,7 +6,7 @@
     "require": {
         "php": "^7.2",
         "ext-json": "*",
-        "contentful/core": "^3.0"
+        "contentful/core": "dev-l8"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5",
@@ -27,6 +27,12 @@
             "vendor/contentful/core/scripts/TestCase.php"
         ]
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jagdeepbanga/contentful-core.php"
+        }
+    ],
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test-quick-fail": "php vendor/bin/phpunit --stop-on-error --stop-on-failure -v",
